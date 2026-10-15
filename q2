@@ -1,0 +1,31 @@
+
+2. Write a Java program to display Addition of Two Numbers.
+
+
+import java.util.Scanner;
+
+class Addition {
+    int a, b;
+
+    void calculateSum() {
+        System.out.println("Sum: " + (a + b));
+    }
+}
+
+public class Question2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Addition obj = new Addition();
+
+        System.out.print("Enter first number: ");
+        obj.a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        obj.b = sc.nextInt();
+
+        obj.calculateSum();
+
+        sc.close();
+    }
+}
