@@ -1,0 +1,35 @@
+
+1. Write a Java program to display Student Details like roll no & name.
+
+
+
+import java.util.Scanner;
+
+class Student {
+    int rollNo;
+    String name;
+
+    void displayDetails() {
+        System.out.println("Roll Number: " + rollNo);
+        System.out.println("Name: " + name);
+    }
+}
+
+public class Question1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Student s = new Student();
+
+        System.out.print("Enter roll number: ");
+        s.rollNo = sc.nextInt();
+        sc.nextLine();
+
+        System.out.print("Enter name: ");
+        s.name = sc.nextLine();
+
+        s.displayDetails();
+
+        sc.close();
+    }
+}
